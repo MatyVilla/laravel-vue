@@ -47,6 +47,10 @@ export default {
     },
     mounted() {
         this.showBlog();
+            const nav = document.querySelector("nav");
+            if(nav.classList.contains("active")){
+                nav.classList.remove("active");
+            }
     },
     methods: {
         async showBlog() {

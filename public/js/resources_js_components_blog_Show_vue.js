@@ -78,6 +78,11 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   },
   mounted: function mounted() {
     this.showBlog();
+    var nav = document.querySelector("nav");
+
+    if (nav.classList.contains("active")) {
+      nav.classList.remove("active");
+    }
   },
   methods: {
     showBlog: function showBlog() {
