@@ -1011,22 +1011,31 @@ var render = function () {
                 _c(
                   "td",
                   [
-                    _c("router-link", {
-                      staticClass: "btn btn-info",
-                      attrs: {
-                        to: { name: "UpdateBlogs", params: { id: blog.id } },
-                      },
-                    }),
-                    _vm._v(" "),
-                    _c("a", {
-                      staticClass: "btn btn-danger",
-                      attrs: { type: "button" },
-                      on: {
-                        click: function ($event) {
-                          return _vm.deleteBlog(blog.id)
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "btn btn-info",
+                        attrs: {
+                          to: { name: "UpdateBlogs", params: { id: blog.id } },
                         },
                       },
-                    }),
+                      [_c("i", { staticClass: "fa-solid fa-pen-to-square" })]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "btn btn-danger",
+                        staticStyle: { cursor: "pointer" },
+                        attrs: { type: "button" },
+                        on: {
+                          click: function ($event) {
+                            return _vm.deleteBlog(blog.id)
+                          },
+                        },
+                      },
+                      [_c("i", { staticClass: "fa-solid fa-trash" })]
+                    ),
                   ],
                   1
                 ),

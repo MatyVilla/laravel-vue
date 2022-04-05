@@ -126,7 +126,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 _context2.next = 2;
                 return _this2.axios.put("/api/blog/".concat(_this2.$route.params.id), _this2.blog).then(function (result) {
                   _this2.$router.push({
-                    name: "showBlogs"
+                    name: "ShowBlogs"
                   });
                 })["catch"](function (err) {
                   console.log(err);

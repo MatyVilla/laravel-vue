@@ -75,7 +75,7 @@ export default {
                 .put(`/api/blog/${this.$route.params.id}`, this.blog)
                 .then((result) => {
                     this.$router.push({
-                        name: "showBlogs",
+                        name: "ShowBlogs",
                     });
                 })
                 .catch((err) => {

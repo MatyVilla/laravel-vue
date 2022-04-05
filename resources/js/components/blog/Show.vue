@@ -23,12 +23,12 @@
                                 <router-link
                                     :to='{name:"UpdateBlogs",params:{id:blog.id}}'
                                     class="btn btn-info"
-                                ></router-link>
-                                <a
+                                ><i class="fa-solid fa-pen-to-square"></i></router-link>
+                                <a style="cursor:pointer;"
                                     type="button"
                                     @click="deleteBlog(blog.id)"
                                     class="btn btn-danger"
-                                ></a>
+                                ><i class="fa-solid fa-trash"></i></a>
                             </td>
                         </tr>
                     </tbody>
